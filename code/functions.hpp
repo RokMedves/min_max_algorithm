@@ -32,7 +32,7 @@ class Board{
   //bot methods
   int** getAvailableSpaces();
   int botCalculateMove(char board[][3], int &xmove, int &ymove);
-  int botCalculateMove2(char board[][3], int &xmove, int &ymove);
+
 };
 
 #endif //FUNCTIONS_HPP
