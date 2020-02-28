@@ -4,8 +4,12 @@
 
 int main(int argc, char* argv[]){
 
-  
-  Board ticTacToe {true};
+  bool useBot {true};
+  if(argc == 2){ //if there was an input
+    useBot = (argv[1][0] == '0' ? false : true);
+  }
+
+  Board ticTacToe {useBot};
 
   ticTacToe.playGame();
   
