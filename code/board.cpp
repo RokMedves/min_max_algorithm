@@ -79,12 +79,12 @@ void Board::getMove(){
   }
 }
 
-void Board::placeMove(int x, int y){
+inline void Board::placeMove(int x, int y){
   theBoard[x][y] = activePlayer;
   changePlayer();
 }
 
-void Board::changePlayer(){
+inline void Board::changePlayer(){
   activePlayer = (activePlayer=='x' ? 'o' : 'x');
 }
 
